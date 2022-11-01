@@ -21,8 +21,11 @@ function draw(){
  
     b.x += b.vx;
     b.y += b.vy;
+
   }
 }
+
+
 
 function mouseDragged(){
   const dx = mouseX - pmouseX;
@@ -43,6 +46,19 @@ function mouseDragged(){
     }
 
   }
+
+  // function draw (){
+  //   if(mag(dx, dy) > 5){
+
+  //     let scores = [];
+  //    for(let i = 0; i < 10; i++){
+  //      scores[i] = random(20, 100); // 60以上100未満のランダムな数を代入
+     
+  //     size=scores[i];
+  //    }
+  //      const b = { x: mouseX, y: mouseY, size:size, vx: dx, vy: dy };
+  //      balls.push(b);
+  // }
 
   
 
