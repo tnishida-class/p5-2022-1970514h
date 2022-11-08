@@ -28,7 +28,7 @@ function ngmark(cx, cy, r){
 // function star(cx, cy, r){
 //   beginShape();
 //   for(var i = 0; i < 5; i++){
-//     let theta = TWO_PI * i * 2 / 5 - HALF_PI; 5分割①っこ飛ばしで進む
+//     let theta = TWO_PI * i * 2 / 5 - HALF_PI; 5分割1っこ飛ばしで進む
 //     let x = cx + cos(theta) * r;
 //     let y = cy + sin(theta) * r;
 //     vertex(x,y);
