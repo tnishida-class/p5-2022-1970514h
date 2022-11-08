@@ -14,6 +14,10 @@ function setup(){
 
 function draw(){
   background(160, 192, 255);
+
+  const b = { x: random(0, width), y: random(0, height), size:random(20, 100), vx: random(-100, 100), vy: random(-100, 100)};
+  balls.push(b);
+
   for(let i = 0; i < balls.length; i++){
     let b = balls[i];
 
@@ -21,6 +25,8 @@ function draw(){
  
     b.x += b.vx;
     b.y += b.vy;
+
+    
 
   }
 }
