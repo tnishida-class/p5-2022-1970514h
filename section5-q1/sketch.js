@@ -4,15 +4,23 @@
 function setup(){
   createCanvas(400, 400);
   background(255);
-  balloon("I love keyakizaka46");
+  balloon("I love keyakizaka46",100,100,155,155,155);
+  
 }
 
-function balloon(t){
+function balloon(t,x,y,cr,cg,cb){
   let w = textWidth(t);
   let h = textAscent() + textDescent();
   let p = 2;
-  fill(0);
-  rect(0, 0, w + p * 2, h + p * 2);
+  
+  
+  fill(cr,cg,cb); //三原色　cr=赤、cg=緑、cb=青
+  rect(x, y, w + p * 2, h + p * 2); //p=padding ：吹き出しと文字の間の隙間
+  triangle(x+10,y+h+p+p,x+30,y+h+p*2,x+p+20,y+h+p+20);
   fill(255);
-  text(t, p, h + p);
+  text(t, x+p, y+h + p);
+ 
+
 }
+
+//margin : 吹き出しと吹き出しの隙間　外側の隙間

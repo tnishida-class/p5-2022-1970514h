@@ -7,6 +7,12 @@
 function setup() {
   createCanvas(100,100);
   background(196);
+  let x = 10;
+  line(x,0,x,100);
+  x = 20
+  line(x,0,x,100);
+  x = 30
+  line(x,0,x,100);
   for(let i = 0; i < 9; i++){
     // 変えるのはここから
     if(i % 2 == 0){
